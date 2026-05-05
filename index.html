@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawon Bu Ike</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="row ai-center jc-between">
+                <div class="nav-brand">
+                    <h1>Pawon Bu Ike</h1>
+                </div>
+                <div class="nav-contact">
+                    <a href="https://wa.me/628170072587" class="btn">Kontak Kami</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row jc-center">
+                <div class="col-10">
+                    <img src="img/pawon bu ike.jpeg" alt="Hero Image" class="img-responsive img-radius">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefit">
+        <div class="container">
+            <div class="spacer-2"></div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" class="icon-64" alt="Organic">
+                    <h3>100% Organik</h3>
+                    <p>Bahan baku pilihan langsung dari petani lokal terbaik.</p>
+                </div>
+                <div class="col-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2917/2917633.png" class="icon-64" alt="Safe Packaging">
+                    <h3>Safe Packaging</h3>
+                    <p>Kemasan kedap udara menjaga kerenyahan lebih lama.</p>
+                </div>
+                <div class="col-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2917/2917945.png" class="icon-64" alt="Natural">
+                    <h3>Proses Alami</h3>
+                    <p>Diolah secara tradisional tanpa bahan pengawet buatan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Menu Section (Dynamic with Filter) -->
+    <section class="menu-page">
+        <div class="container">
+            <div class="menu-header">
+                <h1>Our Delicious Menu</h1>
+                <p>Explore our wide selection of mouth-watering dishes</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="Ayam">Ayam</button>
+                <button class="filter-btn" data-category="Bolu">Bolu</button>
+                <button class="filter-btn" data-category="Nasi">Nasi</button>
+            </div>
+            
+            <!-- PERBAIKAN DI SINI: Tambahkan class "row" agar menu bisa berjajar ke samping -->
+            <div class="food-grid row" id="menuFoods">
+                <!-- Menu items akan dimuat oleh JavaScript ke sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span class="close-btn" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-body">
+                <div id="cartItems">
+                    <p class="empty-cart-message">Your cart is empty</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <h3>Total: Rp <span id="cartTotal">0</span></h3>
+                    </div>
+                    <button class="btn checkout-btn" id="checkoutBtn" style="width: 100%; background: #1e3c72; color: white;">Checkout via WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pawon Bu Ike</h3>
+                    <p>Delivering delicious food with love since 2025</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Ciomas, West Java</p>
+                    <p>+62 817 007 2587</p>
+                    <p>info@pawonbuike.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pawon Bu Ike. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
